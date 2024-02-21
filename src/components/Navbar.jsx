@@ -28,10 +28,7 @@ const Navbar = () => {
       path:"/About",
       linkname:"About"
     },
-    {
-      path:"/Blog",
-      linkname:"Blog"
-    },
+
     {
       path:"/Contact",
       linkname:"Contact"

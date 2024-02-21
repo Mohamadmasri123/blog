@@ -6,11 +6,13 @@ const BlogPage = () => {
   const[blogs ,setBlogs]=useState([])
   useEffect(()=>{
       async function fetchBlogs(){
-      let url=`http://127.0.0.1:5500/src/api/blogsData`;
+      let url=`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=00ae9b828d6e471fa08947b76b038830
+      `;
 
       const response =await fetch(url);
       const data =await response.json();
-      setBlogs(data)
+      setBlogs(data.articles);
+
     }
     fetchBlogs();
   } ,[])
@@ -28,13 +30,13 @@ const BlogPage = () => {
           <BlogCards blogs={blogs}/>
       </div>
 
-      {/* pagination section */}
+      {/* pagination section
       <div className=' grid grid-cols-1 '>
         <h1>Lastest Blogs</h1>
-        <Pagination       />
 
 
-      </div>
+
+      </div> */}
 
 
 

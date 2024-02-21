@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../components/Banner'
 import { IoArrowForwardOutline } from "react-icons/io5";
 import Footer from '../components/Footer';
-
+import BlogPage from '../components/BlogPage'
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
        button="learn more" 
        icon={<IoArrowForwardOutline size={20} className='text-orange-500 mt-1 '  />}
        />
-
+<BlogPage/>
 
     </div>
   )

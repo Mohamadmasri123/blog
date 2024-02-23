@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import { IoArrowForwardOutline } from "react-icons/io5";
-import Footer from '../components/Footer';
+
 import BlogPage from '../components/BlogPage'
 
 const Home = () => {

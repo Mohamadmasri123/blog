@@ -17,7 +17,7 @@ const Navbar = () => {
   // li
   const link=[
     {
-      path:"/Home",
+      path:"/",
       linkname:"Home"
     },
     {

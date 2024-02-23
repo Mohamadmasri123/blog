@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BlogCards from './BlogCards'
-import Pagination from './Pagination'
+
 
 const BlogPage = () => {
   const[blogs ,setBlogs]=useState([])
@@ -29,14 +29,6 @@ const BlogPage = () => {
       <div className='pt-14 mx-auto max-w-5xl'>
           <BlogCards blogs={blogs}/>
       </div>
-
-      {/* pagination section
-      <div className=' grid grid-cols-1 '>
-        <h1>Lastest Blogs</h1>
-
-
-
-      </div> */}
 
 
 

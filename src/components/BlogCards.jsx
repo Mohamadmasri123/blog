@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import ok from "./../assets/Ely Jlede.jpg"
+
 import { CiUser } from "react-icons/ci";
 
-const BlogCards = ({blogs,currentPage,pageSize}) => {
+const BlogCards = ({blogs}) => {
         const filterBlogs =blogs ;
         console.log(filterBlogs)
         
@@ -14,7 +14,7 @@ const BlogCards = ({blogs,currentPage,pageSize}) => {
   return (
     <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1   '>
            {
-        filterBlogs.map((blog,currentPage,pageSize)=> (<Link key={blog.title}>
+        filterBlogs.map((blog)=> (<Link key={blog.title}>
           <div className=' max-w-[250px] p-auto shadow-md w-auto  '>
             <img src={blog.urlToImage}alt="" className='w-auto p-3' />
             <h3 className=' p-3 w-auto font-bold'>{blog.title}</h3>
